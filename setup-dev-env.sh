@@ -24,3 +24,5 @@ curl -fsSL https://get.pnpm.io/install.sh | sh -
 # Install Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
+# Install Go
+source ./setup-dev-env-go.sh
