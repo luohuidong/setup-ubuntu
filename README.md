@@ -1,3 +1,3 @@
 # Setup Ubuntu
 
-This shell script is for setting up Ubuntu for development.
+The shell script can help you quickly set up an Ubuntu development environment
