@@ -9,3 +9,6 @@ sudo apt install ibus-rime
 
 # Install development environment
 source ./setup-dev-env.sh
+
+# Install Docker Engine
+source ./setup-docker-engine.sh
