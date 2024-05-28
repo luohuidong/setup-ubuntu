@@ -15,7 +15,12 @@ download_neovim() {
     ln -s ${TOOLS_PATH}/nvim.appimage ${TOOLS_PATH}/nvim
 
     # Add nvim to PATH
-    echo "export PATH=$HOME/tools:$PATH" >> ~/.bashrc
+    cat <<'EOF' >> ~/.bashrc
+# neovim
+export PATH=$HOME/tools:$PATH'
+# neovim end
+
+EOF
 }
 
 download_neovim_config() {
