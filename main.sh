@@ -12,3 +12,6 @@ source ./setup-dev-env.sh
 
 # Install Docker Engine
 source ./setup-docker-engine.sh
+
+# Install neovim
+source ./setup-neovim.sh
