@@ -5,12 +5,8 @@ sudo apt install tmux
 
 sudo apt install build-essential
 
-# Install Node.js
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash # install nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-nvm install --lts
+# Setup NVM and install Node.js
+source ./setup-dev-env-nvm.sh
 
 # Install Deno
 source ./setup-dev-env-deno.sh
