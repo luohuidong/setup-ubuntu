@@ -13,7 +13,7 @@ export NVM_DIR="$HOME/.nvm"
 nvm install --lts
 
 # Install Deno
-curl -fsSL https://deno.land/install.sh | sh
+source ./setup-dev-env-deno.sh
 
 # Install Bun
 curl -fsSL https://bun.sh/install | bash
