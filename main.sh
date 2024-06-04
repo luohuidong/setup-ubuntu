@@ -15,3 +15,6 @@ source ./setup-docker-engine.sh
 
 # Install neovim
 source ./setup-neovim.sh
+
+# Install lazygit
+go install github.com/jesseduffield/lazygit@latest

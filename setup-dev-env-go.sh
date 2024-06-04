@@ -10,10 +10,12 @@ install_go() {
 	curl -o ${TAR_FILE_PATH} https://go.dev/dl/${TAR_FILE_NAME}
 	sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf ${TAR_FILE_PATH}
 
+	export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
+
 	# Add go to PATH
 	cat <<'EOF' >>~/.bashrc
 # go
-export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 # go end
 
 EOF
